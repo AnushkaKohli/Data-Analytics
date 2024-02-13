@@ -35,7 +35,7 @@ void expand_cluster(PointList *points, int index, int cluster_id, double eps, in
         }
     }
     if (count >= 4)
-        printf("Core Point\n");
+        printf("Core Point.\n");
     if (count < 3)
         points->points[i].cluster_id = 5;
     printf("\n");
