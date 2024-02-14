@@ -34,7 +34,7 @@ void calculate_cluster_centers(float data[N][2], float membership[N][M], float c
     {
         for (int j = 0; j < M; j++)
         {
-            float uij_m = pow(membership[i][j], 1.26); // fuzzy membership
+            float uij_m = pow(membership[i][j], 1.26); // Fuzzy membership
             numerator[j][0] += uij_m * data[i][0];
             numerator[j][1] += uij_m * data[i][1];
             denominator[j] += uij_m;
